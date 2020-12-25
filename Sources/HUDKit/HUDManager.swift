@@ -14,6 +14,8 @@ public class HUDManager: ObservableObject {
     @Published public var isPresented: Bool = false
     public var showsProgress: Bool = true
     
+    public init() { }
+    
     public func show(_ message: String) {
         self.showsProgress = true
         self.message = message
