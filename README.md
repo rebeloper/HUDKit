@@ -1,4 +1,4 @@
-# HUDKit
+# 🪧 HUDKit
 
 ![swift v5.3](https://img.shields.io/badge/swift-v5.3-orange.svg)
 ![platform iOS](https://img.shields.io/badge/platform-iOS-blue.svg)
@@ -43,7 +43,7 @@ Using `HUDKit` is super simple:
 1. create a `@StateObject` variable of `HUDManager()`
 2. add the `.uses(_:)` view-modifier
 
-### 🔻 Show HUD
+### ⚾️ Show HUD
 
 First let's show a HUD 🤩: `hudManager.show("Working...")`
 
@@ -65,7 +65,7 @@ struct ContentView: View {
 }
 ```
 
-### ♻️ Update HUD
+### 🥎 Update HUD
 
 Let's update our HUD: `hudManager.update("Still working hard...")`
 Here we're updating after 2 seconds:
@@ -80,7 +80,7 @@ Button("Show HUD") {
 }
 ```
 
-### 🔺 Hide HUD
+### 🎾 Hide HUD
 
 Hiding the HUD is as simple as showing it: `hudManager.hide("Going away 👋")`
 Let's hide it after 5 seconds:
