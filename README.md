@@ -26,7 +26,7 @@ Download and include the `HUDKit` folder and files in your codebase.
 Import `HUDKit` into your `View`
 
 ```
-import AlertKit
+import HUDKit
 ```
 
 ## 🧳 Features
