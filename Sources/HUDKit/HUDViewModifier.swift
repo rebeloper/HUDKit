@@ -19,10 +19,12 @@ public struct HUDViewModifier: ViewModifier {
                 .disabled(options.disablesContent ? hudManager.isPresented : false)
                 .blur(radius: hudManager.isPresented ? options.blurRadius : 0, opaque: false)
             
-            options.contentCoverColor.opacity(hudManager.isPresented ? 1 : 0).ignoresSafeArea()
-            
-            HUD(hudManager: hudManager, options: options)
-                .padding(.horizontal, options.hudHorizontalPadding)
+            if hudManager.isPresented {
+                options.contentCoverColor.opacity(hudManager.isPresented ? 1 : 0).ignoresSafeArea()
+                
+                HUD(hudManager: hudManager, options: options)
+                    .padding(.horizontal, options.hudHorizontalPadding)
+            }
         }
     }
 }
