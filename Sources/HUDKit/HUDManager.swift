@@ -19,7 +19,9 @@ public class HUDManager: ObservableObject {
     public func show(_ message: String) {
         self.showsProgress = true
         self.message = message
-        isPresented = true
+        withAnimation {
+            isPresented = true
+        }
     }
     
     public func update(_ message: String) {
@@ -27,7 +29,9 @@ public class HUDManager: ObservableObject {
     }
     
     public func hide() {
-        isPresented = false
+        withAnimation {
+            isPresented = false
+        }
     }
     
     public func hide(_ message: String) {
@@ -35,7 +39,9 @@ public class HUDManager: ObservableObject {
         self.message = message
         isPresented = true
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-            self.isPresented = false
+            withAnimation {
+                self.isPresented = false
+            }
         }
     }
 }
