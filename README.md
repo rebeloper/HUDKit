@@ -6,7 +6,7 @@
 
 **HUDKit** is a lightweight library to present HUDs in `SwiftUI`.
 
-<img src="../main/Sources/HUDKit/HUDKit.png" width="350px">
+<img src="../main/Sources/Resources/HUDKit.png" width="350px">
 
 ## 💻 Installation
 ### 📦 Swift Package Manager
