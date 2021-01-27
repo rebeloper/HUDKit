@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "HUDKit",
             dependencies: [],
-            exclude: ["HUDKit/HUDKit.png"]),
+            exclude: ["Sources/HUDKit/HUDKit.png"]),
         .testTarget(
             name: "HUDKitTests",
             dependencies: ["HUDKit"]),
